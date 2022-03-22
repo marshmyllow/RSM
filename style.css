@@ -12,6 +12,7 @@ h2 {
 body {
     width: 60%;
     margin: 0 auto;
+
 }
 
 header {
@@ -88,7 +89,7 @@ header {
     color: #41516B;
 }
 
-.about_container h2 {
+h2 {
     font-family: 'Source Sans Pro';
 
     font-weight: 900;
@@ -110,3 +111,67 @@ header {
 .tasks_section {
     margin-top: 150px;
 }
+
+.tasks_container > h2 {
+    margin-bottom: 67px;
+
+}
+
+.task_items {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row dense;
+    gap: 60px; */
+    /* height: 200px;
+    width: 200px; */
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-auto-flow: row dense; */
+
+}
+
+.task_item {
+    /* justify-self: center; */
+}
+
+.task_item h3 {
+    width: 350px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #2E3E58;    
+}
+
+.task_item p {
+    width: 350px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    
+    color: #2E3E58;    
+}
+
+.af {
+    display: block;
+    position: relative;
+    top: 50px;
+    right: 170px;
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 180px;
+line-height: 0px;
+text-align: center;
+
+color: rgba(65, 81, 107, 0.15);
+}
+/* 
+h3::before {
+    position: fixed;
+} */
