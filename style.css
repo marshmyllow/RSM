@@ -307,3 +307,14 @@ h3::before {
         /* justify-items: start; */
     }
   }
+
+  .center {
+      margin: auto 0;
+      display: flex;
+      
+    justify-content: center;
+  }
+
+  .center iframe {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  }
