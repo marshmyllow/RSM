@@ -12,14 +12,14 @@ h1,h2,h3,p,span {
 }
 
 a {
-    /* text-decoration: none; */
+
     color: #233656;
 }
 
 body {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 25px;
     color: #233656;
     font-style: normal;
 }
@@ -50,7 +50,7 @@ header {
 
 .header_section a:hover {
     text-decoration: underline;
-    
+
 }
 
 .header_container {
@@ -392,11 +392,16 @@ h3::before {
 		top: 0;
 		right: 0;
         background-color: #2E3E58;
+        color:#fff;
 		z-index: 10;
 		padding: 75px;
 		transform: translateX(100%);
         transition: .3s all cubic-bezier(1, 0.01, 0, 0.98);
 	}
+
+    .header_container .header_item > a {
+        color: #fff !important;
+    }
 
 	.header_container_active{
 		transform: translateX(0);
