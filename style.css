@@ -362,6 +362,15 @@ h3::before {
     display: block;
 }
 
+a.msk_link, a.nn_link, a.vlg_link {
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+.nn_link p {
+    margin-bottom: 10px;
+}
+
 /* МEDIARULES */
 
 /* 1100px */
