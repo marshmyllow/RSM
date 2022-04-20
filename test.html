@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a class="map1">карта 1</a>
+    <a class="map2">карта 2</a>
+    <a class="map3">карта 3</a>
+
+    <div class="block1 view"></div>
+    <div class="block2"></div>
+    <div class="block3"></div>
+
+    <style>
+
+        .block1 {
+            background: #000;
+            height: 100px;
+            display: none;
+        }
+
+        .block2 {
+            background: rgb(201, 131, 131);
+            height: 100px;
+            display: none;
+        }
+
+        .block3 {
+            background: rgb(62, 50, 165);
+            height: 100px;
+            display: none;
+        }
+
+        .view {
+            display: block;
+        }
+
+    </style>
+
+
+    <script>
+        let map1 = document.querySelector('.map1');
+        let map2 = document.querySelector('.map2');
+        let map3 = document.querySelector('.map3');
+        let block1 = document.querySelector('.block1');
+        let block2 = document.querySelector('.block2');
+        let block3 = document.querySelector('.block3');
+
+
+
+
+        map2.addEventListener('click', ()=> {
+                block1.classList.remove('view')
+                block2.classList.add('view')
+                block3.classList.remove('view')
+
+        })
+        
+        map3.addEventListener('click', ()=> {
+            block3.classList.add('view')
+            block2.classList.remove('view')
+            block1.classList.remove('view')
+        })
+
+        map1.addEventListener('click', ()=> {
+                block3.classList.remove('view')
+                block2.classList.remove('view')
+                block1.classList.add('view')
+        })
+
+    </script>
+
+
+</body>
+</html>

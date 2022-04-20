@@ -346,6 +346,21 @@ h3::before {
     height: 500px;
 }
 
+.msk_map{
+    display: none;
+}
+
+.nn_map{
+    display: none;
+}
+
+.vlg_map{
+    display: none;
+}
+
+.view {
+    display: block;
+}
 
 /* МEDIARULES */
 
