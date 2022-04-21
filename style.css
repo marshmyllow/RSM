@@ -346,6 +346,21 @@ h3::before {
     height: 500px;
 }
 
+
+div.popup._type_normal._position_top > div.popup__content > div > div {
+    max-height: 400px !important;
+}
+
+body > div.popup._type_normal._position_top > div.popup__content > div > div {
+    height: 1400px !important;
+    border-radius: 20px;
+}
+
+iframe .vlg_map .map-widget-content-view__container {
+    height: 1400px !important;
+    border-radius: 20px;
+}
+
 .msk_map{
     display: none;
 }
